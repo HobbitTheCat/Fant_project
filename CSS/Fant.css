@@ -1,0 +1,88 @@
+@font-face {
+    font-family: "Chakra";
+    src: url("../Res/ChakraPetch-Regular.ttf");
+}
+
+body{
+    margin: 0;
+    background-color: #282828;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.button{
+    margin-top: 20px;
+    width: 300px;
+    border-radius: 10px;
+    text-align: center;
+    background-color: #1d2021;
+    color: #fbf1c7;
+    font-family: Chakra, serif;
+    font-size: 60px;
+
+    transition-duration: 0.5s;
+
+    cursor: pointer;
+
+    -webkit-user-select: none;
+}
+
+.button:hover{
+    background-color: #d65d0e;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+    transform: translateY(-3px);
+}
+
+.galeria{
+    margin-left: 20px;
+    height: 80%;
+    margin-top: 20px;
+}
+
+img{
+    display: none;
+    border-radius: 5px;
+    height: 368px;
+    width: 368px;
+}
+
+
+
+
+.overlay{
+    position: fixed;
+    background: rgba(28,28,28 , 0.9);
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: none;
+    z-index: 3;
+}
+.overlay.open{
+    display: grid;
+    align-items: center;
+    justify-items: center;
+}
+
+.overlay_img{
+    height: 50%;
+    width: 60%;
+
+    border-radius: 10px;
+
+    display: block;
+    margin: 0 auto;
+    -webkit-user-select: none;
+}
+
+#close{
+    background: none;
+    top:0;
+    left: 0;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
